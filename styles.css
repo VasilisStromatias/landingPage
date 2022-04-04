@@ -89,6 +89,17 @@ body {
   align-items: center;
 }
 
+.item{
+  position: relative;
+}
+
+.item img{
+position: absolute;
+    top: 52%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
 .item h3 {
   font-family: pfbold;
   font-size: 33px;
@@ -98,12 +109,9 @@ body {
   padding: 10px;
 }
 
-.image-container {
-}
 
 .price-container {
-  display: flex;
-  justify-content: end;
+
 }
 
 .price {
