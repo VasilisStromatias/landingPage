@@ -88,6 +88,11 @@ a {
   font-family: pfmedium;
 }
 
+.items-grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .item h3 {
   font-size: clamp(15px, 4vw, 33px);
 }
