@@ -164,6 +164,39 @@ a {
   background-color: #b2b192;
 }
 
+/******** YELLOW SECTION *******/
+.yellow-container {
+  background-color: #f2d217;
+  font-family: pfmedium;
+  max-width: 100%;
+  min-height: 420px;
+  padding: 35px;
+}
+
+.yellow-heading {
+  margin-bottom: 70px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.yellow-heading h4:first-child {
+  font-weight: 100;
+}
+
+/******** BRANDS SECTION *******/
+.brands-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, clamp(165px, 35vw, 270px));
+  column-gap: 30px;
+  row-gap: 25px;
+}
+
+.brand {
+  background-color: #faf7ea;
+  height: clamp(60px, 10vw, 90px);
+  max-width: 270px;
+}
+
 /******** MEDIA QUERIES *******/
 
 @media (max-width: 955px) {
@@ -195,12 +228,4 @@ a {
     width: 320px;
     height: 140px;
   }
-
-  /* #item1 img,
-  #item3 img,
-  #item4 img,
-  #item5 img,
-  #item7 img {
-    max-width: 65%;
-  } */
 }
