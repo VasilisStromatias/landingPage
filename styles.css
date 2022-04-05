@@ -32,6 +32,7 @@ a {
 .banner {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /********** SECTION 1 ***********/
@@ -43,7 +44,6 @@ a {
   text-align: center;
   background-color: #f7f6e7;
   color: #707070;
-  transform: translateY(-7px);
   line-height: clamp(25px, 4vw, 35px);
 }
 
@@ -61,9 +61,7 @@ a {
 
 /********** ITEMS SECTION ***********/
 .items-container {
-  /* max-height: 1650px; */
   background-color: #ebe9cd;
-  transform: translateY(-7px);
   color: #707070;
 }
 
@@ -174,6 +172,13 @@ a {
     display: none;
   }
 
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 165px);
+    grid-template-rows: repeat(6, 140px);
+    grid-gap: 30px;
+  }
+
   #item1,
   #item2,
   #item3,
@@ -188,13 +193,5 @@ a {
   #item9 {
     width: 320px;
     height: 140px;
-  }
-
-  #item9 img {
-    width: 40%;
-  }
-
-  .item img {
-    width: 70%;
   }
 }
