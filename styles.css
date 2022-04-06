@@ -61,12 +61,14 @@ a {
 
 /********** ITEMS SECTION ***********/
 .items-container {
+  padding: 20px 0 30px 0;
   background-color: #ebe9cd;
   color: #707070;
 }
 
 .items-container-heading {
-  padding: clamp(15px, 4vw, 35px);
+  /* padding: clamp(15px, 4vw, 35px); */
+  padding-bottom: clamp(15px, 4vw, 30px);
   text-align: center;
 }
 
@@ -169,8 +171,8 @@ a {
   background-color: #f2d217;
   font-family: pfmedium;
   max-width: 100%;
-  min-height: 420px;
-  padding: 35px;
+  padding-top: 30px;
+  padding-bottom: 55px;
 }
 
 .yellow-heading {
@@ -195,6 +197,14 @@ a {
   background-color: #faf7ea;
   height: clamp(60px, 10vw, 90px);
   max-width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand img {
+  max-width: 100%;
+  max-height: 80%;
 }
 
 /******** MEDIA QUERIES *******/
