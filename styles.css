@@ -188,9 +188,10 @@ a {
 /******** BRANDS SECTION *******/
 .brands-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, clamp(165px, 35vw, 270px));
+  grid-template-columns: repeat(auto-fit, clamp(165px, 35vw, 280px));
   column-gap: 30px;
   row-gap: 25px;
+  margin-left: 2%;
 }
 
 .brand {
