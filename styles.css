@@ -208,6 +208,28 @@ a {
   max-height: 80%;
 }
 
+/******** GREEN SECTION ********/
+
+.green-container {
+  font-family: pfmedium;
+
+  background-color: #137b45;
+  height: 420px;
+  max-height: 420px;
+}
+
+.green-heading {
+  margin-bottom: 70px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+  line-height: 40px;
+}
+
+.green-heading h4:last-child {
+  font-weight: 100;
+}
+
 /******** MEDIA QUERIES *******/
 
 @media (max-width: 955px) {
