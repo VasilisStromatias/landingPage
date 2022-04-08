@@ -95,6 +95,9 @@ a {
   justify-content: space-evenly;
   align-items: end;
   row-gap: 20px;
+  /* flex-basis: 21.1%; */
+  /* width-item / (1920px - paddings(75 +75))  
+  no fix values ONLY responsive values*/
 }
 
 .item h3 {
