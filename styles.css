@@ -199,8 +199,8 @@
   padding-bottom: 28px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (165px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 165px);
+  -ms-grid-columns: (minmax(clamp(165px, 17vw, 200px), 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(clamp(165px, 17vw, 200px), 1fr));
   gap: 10px;
 }
 
