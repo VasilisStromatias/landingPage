@@ -45,7 +45,7 @@
     color: #ffffff;
     font-family: var(--sans-pro-bold);
     h1 {
-      font-size: 15px;
+      font-size: 14px;
     }
     h6 {
       font-size: 18px;
@@ -112,6 +112,9 @@
     .grid-item:nth-child(6) {
       background-color: #ada0bf;
       padding: 8px 6px 0px 8px;
+      img {
+        padding-top: 20px;
+      }
       h6 {
         // position: relative;
         bottom: 0px;
@@ -186,11 +189,91 @@
       max-height: 50px;
     }
   }
+
   .yellow-item:nth-child(11) {
     padding-top: 17px;
   }
   .yellow-item:nth-child(12) {
     padding-top: 10px;
+  }
+}
+
+.green-wrapper {
+  background-color: #137b45;
+  color: #ffffff;
+  padding-inline: 10px;
+  .green-title {
+    padding-block: 10px;
+    text-align: center;
+    line-height: 17px;
+    .green-heading {
+      font-family: var(--sans-pro-medium);
+      font-size: 13px;
+      strong {
+        font-size: 15px;
+      }
+    }
+  }
+  .green-inner {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
+    padding-bottom: 18px;
+  }
+  .green-item {
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+      transform: translateY(5px);
+    }
+    .green-item-box {
+      background-color: #d8ffeb;
+      color: #707070;
+      width: 100%;
+      height: clamp(55px, 13vw, 80px);
+      font-family: var(--sans-pro-medium);
+      .green-item-box-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        h1 {
+          font-size: 20px;
+          font-family: var(--sans-pro-bold);
+        }
+        h4 {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+.blue-wrapper {
+  background-color: #c4e4e6;
+  color: #707070;
+  font-family: var(--sans-pro-medium);
+  padding-inline: 39px;
+  .blue-title {
+    text-align: center;
+    padding-block: 15px;
+    h3 {
+      font-size: 13px;
+      strong {
+        font-size: 15px;
+        font-family: var(--sans-pro-bold);
+      }
+    }
+  }
+  .blue-inner {
+    padding-top: 50px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
