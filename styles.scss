@@ -311,6 +311,111 @@
   }
 }
 
+.eggs-wrapper {
+  background-color: #be84b8;
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--sans-pro-medium);
+  padding-inline: 48px;
+  .eggs-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 13px;
+    img {
+      display: block;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .eggs-title {
+      padding-top: 12px;
+      h1 {
+        font-size: 18px;
+        font-family: var(--sans-pro-bold);
+        margin-bottom: 5px;
+      }
+      h3 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.pre-footer-wrapper {
+  background-color: #68a3d3;
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--sans-pro-medium);
+  padding-inline: 24px;
+  .pre-footer-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 13px;
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .pre-footer-title {
+      padding-inline: 24px;
+      padding-top: 12px;
+      h1 {
+        font-size: 18px;
+        font-family: var(--sans-pro-bold);
+        margin-bottom: 5px;
+      }
+      h3 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.footer-wrapper {
+  background-color: #f7f6e7;
+  color: #707070;
+  text-align: center;
+  font-family: var(--sans-pro-medium);
+  padding-inline: 45px;
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 130px;
+    .footer-title {
+      padding-inline: 40px;
+      padding-top: 12px;
+      h1 {
+        font-size: 18px;
+        font-family: var(--sans-pro-bold);
+        margin-bottom: 5px;
+      }
+    }
+    .footer-item {
+      position: relative;
+      h2 {
+        font-size: 15px;
+        font-family: var(--sans-pro-bold);
+        margin-block: 5px;
+      }
+      h4 {
+        font-size: 13px;
+      }
+      img {
+        display: block;
+        max-width: 50%;
+        margin: 0 auto;
+      }
+    }
+    .footer-item:nth-child(3) {
+      img {
+        max-width: 30%;
+      }
+    }
+  }
+}
+
 @media (min-width: 600px) {
   .grid-wrapper {
     .grid-title {
