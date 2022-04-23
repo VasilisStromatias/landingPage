@@ -17,17 +17,19 @@
 }
 
 .title {
-  padding-top: 7px;
+  padding-top: clamp(8px, 3vw, 25px);
   background-color: #f7f6e7;
   color: #707070;
   text-align: center;
-  line-height: 13px;
+  line-height: clamp(13px, 4vw, 27px);
+  height: clamp(75px, 12vw, 135px);
   h2 {
     font-family: var(--sans-pro-medium);
-    font-size: 11px;
+    font-size: clamp(11px, 3vw, 31px);
+    font-weight: 500;
     strong {
       font-family: var(--sans-pro-bold);
-      font-size: 12px;
+      font-size: clamp(12px, 3vw, 33px);
     }
   }
 }
@@ -455,6 +457,10 @@
 }
 
 @media (min-width: 767px) {
+  .title {
+    line-height: clamp(25px, 5vw, 39px);
+  }
+
   .grid-wrapper {
     background-color: #ebe9cd;
     .grid-title {
@@ -464,18 +470,61 @@
       color: #707070;
       h1 {
         font-family: var(--sans-pro-medium);
-        font-size: 20px;
+        font-size: clamp(20px, 4vw, 37px);
+        font-weight: 500;
       }
       strong {
         font-family: var(--sans-pro-bold);
-        font-size: 30px;
+        font-size: clamp(30px, 4vw, 48px);
       }
     }
     .grid-inner {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      // justify-content: space-between;
+      align-items: flex-end;
+      .grid-item {
+        h1 {
+          font-size: 33px;
+        }
+        h6 {
+          font-size: 48px;
+        }
+        img {
+          max-height: 300px;
+        }
+      }
+      .grid-item:nth-child(1) {
+        flex-basis: 21.1%;
+        padding: 21px 15px 18px 17px;
+      }
+      .grid-item:nth-child(2) {
+        flex-basis: 43.69%;
+        padding: 21px 31px 18px 29px;
+      }
+      .grid-item:nth-child(3) {
+        flex-basis: 30.8%;
+        padding: 34px 20px 18px 32px;
+      }
+      .grid-item:nth-child(4) {
+        flex-basis: 30.8%;
+      }
+      .grid-item:nth-child(5) {
+        flex-basis: 21.1%;
+      }
+      .grid-item:nth-child(6) {
+        flex-basis: 43.69%;
+      }
+      .grid-item:nth-child(7) {
+        flex-basis: 21.1%;
+      }
+      .grid-item:nth-child(8) {
+        flex-basis: 43.69%;
+      }
+      .grid-item:nth-child(9) {
+        flex-basis: 30.8%;
+      }
     }
   }
 }
